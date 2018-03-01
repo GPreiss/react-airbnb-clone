@@ -5,6 +5,7 @@ import Navbar from './components/navbar';
 import Footer from './components/footer';
 import Flat from './components/flat';
 import Marker from './components/marker';
+import Banner from './components/banner';
 import './App.css';
 
 import fontawesome from '@fortawesome/fontawesome'
@@ -66,12 +67,16 @@ handleSearch = (event) => {
 
     return (
        <div className="landing-pg">
+
           <div className="navbar">
            <Navbar />
           </div>
+          <div className="banner">
+           <Banner/>
+          </div>
         <div className="app">
           <div className="main">
-            <div className="search">
+            <div id="search-bar" className="search">
             <input
               type="text"
               placeholder="Search..."
@@ -87,6 +92,7 @@ handleSearch = (event) => {
               })}
             </div>
           </div>
+           <a name="jump"></a>
           <div className="map">
             <GoogleMapReact
                 bootstrapURLKeys= {{
