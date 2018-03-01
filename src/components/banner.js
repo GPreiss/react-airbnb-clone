@@ -10,14 +10,13 @@ class Banner extends React.Component {
 
 
     return (
-        <div className="landing-banner" style={bannerStyle}>
-          <div className="banner-content">
-            <h1>A Home Anywhere You Are</h1>
-            <p>Rent unique places to stay from local hosts in 190+ countries.</p>
-              <a href="#jump" className="btn-green">Start Here</a>
-          </div>
-
+      <div className="landing-banner" style={bannerStyle}>
+        <div className="banner-content">
+        <h1>A Home Anywhere You Are</h1>
+        <p>Rent unique places to stay from local hosts in 190+ countries.</p>
+        <a id="scrollButton" href="#jump" className="btn-green">Start Here</a>
         </div>
+      </div>
       );
   }
 }
